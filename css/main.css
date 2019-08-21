@@ -211,6 +211,13 @@ h3 {
 	margin: 0;
 }
 
+#scr {
+	margin:20px auto;
+	width: 825px;
+	height: 500px;
+	margin-top:20px;
+}
+
 .works-carousel .owl-nav {
 	margin-top: 50px !important;
 }

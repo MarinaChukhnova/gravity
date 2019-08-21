@@ -1,4 +1,4 @@
-/*var slider = {
+var slider = {
 	slides:['img/img3.jpg','img/img4.jpg','img/img3.jpg','img/img4.jpg'],
 	frame:0, // текущий кадр для отбражения - индекс картинки из массива
 	set: function(image) { // установка нужного фона слайдеру
@@ -20,13 +20,13 @@
 };
 window.onload = function() { // запуск слайдера после загрузки документа
 	slider.init();
-	setInterval(function() { // ставим пятисекундный интервал для перелистывания картинок
+	/*setInterval(function() { // ставим пятисекундный интервал для перелистывания картинок
 	slider.right();
-	} ,5000);
-};*/
+	} ,5000);*/
+};
 
 
-$(function() {
+/*$(function() {
 	$('.works-carousel').owlCarousel({
 	    loop:true,
 	    margin:30,
@@ -75,4 +75,4 @@ $(function() {
       .closest('section.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
   });
 
-});
+});*/
