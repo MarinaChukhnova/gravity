@@ -1,5 +1,5 @@
 var slider = {
-	slides:['img/img3.jpg','img/img4.jpg','img/img3.jpg','img/img4.jpg'],
+	slides:['img/img3.jpg','img/img4.jpg'],
 	frame:0, // текущий кадр для отбражения - индекс картинки из массива
 	set: function(image) { // установка нужного фона слайдеру
 		document.getElementById("scr").style.backgroundImage = "url("+image+")";
@@ -20,10 +20,11 @@ var slider = {
 };
 window.onload = function() { // запуск слайдера после загрузки документа
 	slider.init();
-	/*setInterval(function() { // ставим пятисекундный интервал для перелистывания картинок
+	/*setTimeout(function() { // интервал для перелистывания картинок
 	slider.right();
-	} ,5000);*/
+	} ,2000);*/
 };
+
 
 
 /*$(function() {

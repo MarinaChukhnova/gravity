@@ -265,17 +265,21 @@ h3 {
 	width: 825px;
 	height: 500px;
 	margin-top:20px;
+	transition: all 2s ease;
 }
 
 .works-carousel .owl-nav {
 	margin-top: 50px !important;
+	
 }
 
 .works-carousel .owl-prev {
 	margin-right: 25px !important;
+	
 }
 .btn-nav {
 	opacity: 0.5;
+	
 }
 
 .btn-nav:hover {
