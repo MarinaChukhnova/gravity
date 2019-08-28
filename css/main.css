@@ -71,6 +71,7 @@ h3 {
 	height: 95vh;
 }
 
+/*nav*/
 .nav {
 	padding-top: 59px;
 	margin-bottom: 127px;
@@ -84,15 +85,9 @@ h3 {
 	opacity: 0.3;
 	transition: all 0.4s ease;
 }
+/*end nav*/
 
-.search {
-	
-}
-
-.menu {
-	
-}
-
+/*offer*/
 .offer-cont__title {
 	font-size: 60px;
 	letter-spacing: -0.01em;
@@ -100,16 +95,11 @@ h3 {
 }
 
 .offer-cont__title:hover {
-	animation: jello 3s ease 1;
+	animation: jello_animation 3s ease 1;
 }
 
 .offer-cont__text {
 	margin: 30px 0 56px;
-}
-
-
-.offer-cont__btn {
-
 }
 
 .hero {
@@ -124,7 +114,7 @@ h3 {
 }
 
 .hero:hover{
-	animation: shake 3s ease 1;
+	animation: shake_animation 3s ease 1;
 }
 
 .video {
@@ -138,10 +128,9 @@ h3 {
 	display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 4s ease;
-    
-    
+    transition: all 4s ease;    
 }
+
 .video:hover{
 	animation: rotate_animation 1.5s 1;
 }
@@ -160,8 +149,9 @@ h3 {
     opacity: 1;
     transition: 2s ease;
 }
+/*end offer*/
 
-
+/*problems*/
 .problems {
 	padding-top: 137px;
 }
@@ -171,13 +161,12 @@ h3 {
 }
 
 .about__title:hover{
-    animation: swing 2s linear 1;
+    animation: swing_animation 2s linear 1;
 }
 
 .poster:hover {
-	animation: shake 3s linear infinite;
+	animation: shake_animation 3s linear infinite;
 }
-
 
 .about__author {
 	background: url('../img/author.jpg') no-repeat left center;
@@ -209,7 +198,9 @@ h3 {
 	color:#68686c;
 	transform: scale(1.02);  
 }
+/*end problems*/
 
+/*services*/
 .services {
 	padding-top: 142px;
 }
@@ -222,13 +213,10 @@ h3 {
 	margin-bottom: 40px;
 	transition: all .5s ease;
 }
+
 .section-title__label:hover {
 	color:#000;
 	font-weight: bold;
-}
-
-.section-title__heading{
-	
 }
 
 .serv-list {
@@ -255,21 +243,6 @@ h3 {
 	margin-top: 99px;
 }
 
-@media screen and (min-width: 992px) {
-	.works-carousel .item, .works-carousel .owl-item {
-		width: 825px !important;
-		position: relative;
-	}
-}
-
-.owl-theme .owl-dots, .owl-theme .owl-nav {
-	text-align: left;
-}
-
-.owl-theme .owl-nav [class*=owl-] {
-	margin: 0;
-}
-
 #scr {
 	margin:20px auto;
 	width: 825px;
@@ -278,41 +251,30 @@ h3 {
 	transition: all 2s ease;
 }
 
-.works-carousel .owl-nav {
+.works-carousel .arrow-nav {
 	margin-top: 50px !important;
 	
 }
 
-.works-carousel .owl-prev {
+.works-carousel .arrow-prev {
 	margin-right: 25px !important;
 	
 }
-.btn-nav {
+.arrow-nav {
 	opacity: 0.5;
 	
 }
 
-.btn-nav:hover {
+.arrow-nav:hover {
 	opacity: 1;
 	-webkit-transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	transform: scale(1.1);  
 	transition: all 1s ease; 
 }
+/*end services*/
 
-.owl-carousel__play {
-	display: block;
-	background: url('../img/play.svg');
-	width: 65px;
-	height: 65px;
-	position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -32px;
-    margin-top: -32px;
-    cursor: pointer;
-}
-
+/*result*/
 .collage {
 	padding-top: 219px;
 	width: 50%;
@@ -322,7 +284,7 @@ h3 {
 	left: 0;
 }
 .collage:hover{
-	animation: shake-right 3s ease 1;
+	animation: shake-right_animation 3s ease 1;
 }
 .collage img {
 	display: block;
@@ -332,7 +294,7 @@ h3 {
 	right: 0;
 	bottom: 0;
 	box-shadow: 30px 80px 130px rgba(0,0,0,0.25);
-	animation: run 5s ease infinite; 
+	animation: run_animation 5s ease infinite; 
 }
 		 
 .collage img:hover {
@@ -352,7 +314,7 @@ h3 {
 	margin-bottom: 30px;
 }
 .easy__title:hover{
-	animation: swing 2s linear 1;
+	animation: swing_animation 2s linear 1;
 }
 
 .easy__text {
@@ -384,7 +346,9 @@ h3 {
 .easy__point_second {
 	background: url('../img/bag.svg') no-repeat left center;
 }
+/*end result*/
 
+/*works tabs*/
 .works {
 	padding-top: 283px;
 }
@@ -438,7 +402,6 @@ h3 {
 .works-wrap__item:after{
     content:'';
 	display: block;
-	
 	width: 65px;
 	height: 65px;
 	position: absolute;
@@ -457,14 +420,26 @@ h3 {
 }
 
 .tabs__content {
-  display: none !important; /* по умолчанию прячем все блоки */
-}
-.tabs__content.active {
-  display: flex !important;  /* по умолчанию показываем нужный блок */
+	display: none !important; /* hide all blocks by default */
 }
 
+.tabs__content.active {
+	display: flex !important;  /* show the desired block by default */
+}
+/*end work tabs*/
+
+/*testimonials*/
 .testimonials {
 	padding-top: 248px;
+}
+
+.section-title__heading_review {
+	font-size: 20px;
+	transition: all 1s ease;
+}
+
+.section-title__heading:hover {
+	animation: swing_animation 2s linear 1;
 }
 
 .contributor {
@@ -472,15 +447,11 @@ h3 {
 }
 
 .contributor:hover{
-	animation: jello 2s ease 1;
+	animation: jello_animation 2s ease 1;
 }
 
 .contributor__title {
 	margin-bottom: 10px;
-}
-
-.contributor__desc {
-
 }
 
 .cont-photo {
@@ -488,20 +459,18 @@ h3 {
 	
 }
 
-.cont-photo:hover{
-	
-}
-
-.contributor-carousel .owl-nav {
+.contributor-carousel .arrow-nav {
 	display: flex;
 	margin-top: -50px;
 	position: relative;
 }
 
-.contributor-carousel .owl-prev {
+.contributor-carousel .arrow-prev {
 	margin-right: 25px;
 }
+/*end testimonials*/
 
+/*clients*/
 .clients {
 	padding-top: 278px;
 }
@@ -515,9 +484,11 @@ h3 {
 }
 
 .clients-row img:hover {
-	animation: pulsing 2s linear infinite;
+	animation: pulsing_animation 2s linear infinite;
 }
+/*end clients*/
 
+/*footer*/
 .footer {
 	height: 240px;
 	background: #515151;
@@ -537,16 +508,9 @@ h3 {
 	-ms-transform: scale(1.2);
 	transform: scale(1.2);
 }
+/*end footer*/
 
-.section-title__heading_review {
-	font-size: 20px;
-	transition: all 1s ease;
-}
-
-.section-title__heading:hover {
-	animation: swing 2s linear 1;
-}
-
+/*media*/
 @media screen and (max-width: 1200px) {
 	.work-tabs {
 		margin-left: 0;
@@ -565,6 +529,13 @@ h3 {
 	#scr {
    		width: 100%;
    		height: 80vh;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.works-carousel .item {
+		width: 825px !important;
+		position: relative;
 	}
 }
 
@@ -592,7 +563,7 @@ h3 {
 		margin-left: 0;
 		margin-top: 110px;
 	}
-	.contributor-carousel .owl-nav {
+	.contributor-carousel .arrow-nav {
 		margin-top: 40px;
 	}
 	#scr {
@@ -627,8 +598,10 @@ h3 {
    		height: 80vh;
 	}
 }
+/*end media*/
 
-@keyframes pulsing {
+/*keyframes*/
+@keyframes pulsing_animation {
   25% {
     -webkit-transform: scale(1.2, 1.2);
     transform: scale(1.2, 1.2);
@@ -650,55 +623,68 @@ h3 {
 }
 
 @keyframes rotate_animation {
-  0% {transform: rotate(180deg);}
-   100% {transform: rotate(0deg);}
+  0% {
+  	-webkit-transform: rotate(180deg);
+  	transform: rotate(180deg);
+  }
+  100% {
+  	-webkit-transform: rotate(0deg);
+   	transform: rotate(0deg);
+  }
 }
 
-
-@keyframes shake {
+@keyframes shake_animation {
   50% {
+  	-webkit-transform: translateX(-30px); 
     transform: translateX(-30px);     
   }
   100% {
+  	-webkit-transform: translateZ(-30px);
     transform: translateZ(-30px);     
   }
 }
 
-@keyframes shake-left {
+@keyframes shake-left_animation {
   50% {
+  	-webkit-transform: translateX(-30px);
     transform: translateX(-30px);     
   }
   100% {
+  	-webkit-transform: translateX(-30px);
     transform: translateX(-30px);     
   }
 }
 
-@keyframes shake-right {
+@keyframes shake-right_animation {
   50% {
+  	-webkit-transform: translateX(30px);
     transform: translateX(30px);     
   }
   100% {
+  	-webkit-transform: translateX(30px); 
     transform: translateX(30px);     
   }
 }
 
-
-@keyframes run {
+@keyframes run_animation {
   0% {
+  	-webkit-transform: translate(0%);
     transform: translate(0%);
     border-radius: 10%;
   }
- 30% {
+  30% {
+  	-webkit-transform: translate(-50%) scale(0.8); 
     transform: translate(-50%) scale(0.8); 
     border-radius: 0%;
   }
   60% {
+  	-webkit-transform: translate(-50%) scale(0.8); 
     transform: translate(-30%, -30%);
     border-radius: 10%; 
   } 
 }
 
-@keyframes swing {
+@keyframes swing_animation {
   20% {
     -webkit-transform: rotate3d(0, 0, 1, 10deg);
     transform: rotate3d(0, 0, 1, 10deg);
@@ -725,7 +711,7 @@ h3 {
   }
 }
 
-@keyframes jello {
+@keyframes jello_animation {
   from,
   11.1%,
   to {
@@ -768,3 +754,4 @@ h3 {
     transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
   }
 }
+/*end keyframes*/
