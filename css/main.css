@@ -284,7 +284,7 @@ h3 {
 	left: 0;
 }
 .collage:hover{
-	animation: shake-right_animation 3s ease 1;
+	/*animation: shake-right_animation 3s ease 1;*/
 }
 .collage img {
 	display: block;
