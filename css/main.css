@@ -510,6 +510,25 @@ h3 {
 }
 /*end footer*/
 
+#arrowTop {
+    height: 15px;
+    width: 20px;
+    color: #000;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+#arrowTop::before {
+    content: '▲';
+}
+#arrowTop:hover{
+	opacity: 0.4;
+	color:#1e23ef;
+}
+
+
 /*media*/
 @media screen and (max-width: 1200px) {
 	.work-tabs {
