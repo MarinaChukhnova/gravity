@@ -36,4 +36,14 @@ window.addEventListener('scroll', function() {
     arrowTop.hidden = (pageYOffset < document.documentElement.clientHeight);
  });
 
+//HIDE BY ELEMENT
+document.getElementById('text-hidden').onclick = function() {
+    document.getElementById('text-hidden').hidden = true;
+    document.body.style.background = "#ccc";
+}
 
+document.getElementById('hero').onclick = function() {
+    document.getElementById('hero').hidden = true;
+    
+}
+debugger;
